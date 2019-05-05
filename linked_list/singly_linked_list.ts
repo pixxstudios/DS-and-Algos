@@ -1,11 +1,16 @@
 class LinkedList {
 
-    protected val: number;
-    protected next
+    protected id: number;
+    protected next: object;
 
-    constructor(val) {
-        this.val = val;
+    constructor(id: number) {
+        this.id = id;
     }
 
-
+    display(){
+        console.log(this.id);
+    }
 }
+
+var obj1 = new LinkedList(1);
+obj1.display();
