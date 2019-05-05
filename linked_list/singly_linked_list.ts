@@ -1,5 +1,4 @@
 class LinkedList {
-
     protected id: number;
     protected next: object;
 
