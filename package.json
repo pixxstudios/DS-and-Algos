@@ -1,0 +1,23 @@
+{
+  "name": "ds-and-algos-typescript",
+  "version": "1.0.0",
+  "description": "Different Data Structures and Algorithms in JavaScript using TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixxstudios/DS-and-Algos-TypeScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pixxstudios/DS-and-Algos-TypeScript/issues"
+  },
+  "homepage": "https://github.com/pixxstudios/DS-and-Algos-TypeScript#readme",
+  "dependencies": {
+    "@types/node": "^12.0.0",
+    "jest": "^24.8.0"
+  }
+}
