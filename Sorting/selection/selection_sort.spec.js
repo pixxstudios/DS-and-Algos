@@ -6,6 +6,11 @@ describe("Selection sort", () => {
         expect(SelectionSort([])).not.toEqual([1]);
     });
 
+    it("check for single element", () => {
+        expect(SelectionSort([99])).toEqual([99]);
+        expect(SelectionSort([1])).not.toEqual([0]);
+    });
+
     it("should sort [1000,7,21,6,8,793,99,9] array", () => {
         expect(SelectionSort([1000,7,21,6,8,793,99,9])).toEqual([6,7,8,9,21,99,793,1000]);
     });
