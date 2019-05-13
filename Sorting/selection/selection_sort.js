@@ -6,8 +6,17 @@ function SelectionSort(arr) {
     if (arr.length === 1)
         return arr;
     var min = arr[0];
-    for (var i = 0; i < arr.length; i++) {
+    var i = 1;
+    for (i = 1; i < arr.length; i++) {
+        for (var j = i; j < arr.length; j++) {
+            if (arr[j] < min)
+                min = arr[j];
+        }
     }
+    var temp = arr[i];
+    arr[i] = min;
+    min = temp;
+    console.log(min, arr);
     return arr;
 }
 exports.SelectionSort = SelectionSort;

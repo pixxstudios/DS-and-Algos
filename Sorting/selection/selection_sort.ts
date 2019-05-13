@@ -5,9 +5,17 @@ function SelectionSort(arr: Array<number>): Array<number> {
     if(arr.length === 1) return arr;
 
     let min = arr[0];
-    for(let i = 0; i < arr.length; i++ ) {
-
+    let i = 1;
+    for(i = 1; i < arr.length; i++ ) {
+        for(let j = i ; j < arr.length; j++) {
+            if(arr[j] < min) min = arr[j];
+        }
     }
+
+    const temp = arr[i];
+    arr[i] = min;
+    min = temp;
+    console.log(min, arr);
 
     return arr;
 }
