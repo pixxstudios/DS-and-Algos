@@ -15,4 +15,19 @@ class LinkedList {
     insertFirst(data) {
         this.head = new Node(data, this.head);
     }
+
+    // print linked list
+    printListData() {
+        let current = this.head;
+        while(current) {
+            console.log(current.data);
+            current = current.next;
+        }
+    }
 }
+
+const ll = new LinkedList();
+ll.insertFirst(100);
+ll.insertFirst(200);
+
+ll.printListData();
