@@ -5,5 +5,14 @@ class Node {
     }
 }
 
-let n = new Node(100);
-console.log(n);
+class LinkedList {
+    constructor() {
+        this.head = null;
+        this.size = 0;
+    }
+
+    // insert first node
+    insertFirst(data) {
+        this.head = new Node(data, this.head);
+    }
+}
