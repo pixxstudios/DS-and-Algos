@@ -14,6 +14,7 @@ class LinkedList {
     // insert first node
     insertFirst(data) {
         this.head = new Node(data, this.head);
+        this.size++;
     }
 
     // insert last node
@@ -22,6 +23,7 @@ class LinkedList {
         if(!this.head) this.head = new Node(data);
         else while(current.next) current = current.next;
         current.next = new Node(data);
+        this.size++;
     }
 
     // print linked list
