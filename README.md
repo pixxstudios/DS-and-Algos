@@ -1,2 +1,3 @@
-# DS-and-Algos-TypeScript
-Different Data Structures and Algorithms in JavaScript using TypeScript
+# DS-and-Algos
+
+Different Data Structures and Algorithms in JavaScript
